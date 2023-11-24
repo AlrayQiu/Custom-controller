@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"jyme02_can_f407\startup_stm32f407xx.o"
+"jyme02_can_f407\main.o"
+"jyme02_can_f407\stm32f4xx_it.o"
+"jyme02_can_f407\stm32f4xx_hal_msp.o"
+"jyme02_can_f407\jyme02_can.o"
+"jyme02_can_f407\stm32f4xx_hal_can.o"
+"jyme02_can_f407\stm32f4xx_hal_rcc.o"
+"jyme02_can_f407\stm32f4xx_hal_rcc_ex.o"
+"jyme02_can_f407\stm32f4xx_hal_flash.o"
+"jyme02_can_f407\stm32f4xx_hal_flash_ex.o"
+"jyme02_can_f407\stm32f4xx_hal_flash_ramfunc.o"
+"jyme02_can_f407\stm32f4xx_hal_gpio.o"
+"jyme02_can_f407\stm32f4xx_hal_dma_ex.o"
+"jyme02_can_f407\stm32f4xx_hal_dma.o"
+"jyme02_can_f407\stm32f4xx_hal_pwr.o"
+"jyme02_can_f407\stm32f4xx_hal_pwr_ex.o"
+"jyme02_can_f407\stm32f4xx_hal_cortex.o"
+"jyme02_can_f407\stm32f4xx_hal.o"
+"jyme02_can_f407\stm32f4xx_hal_exti.o"
+"jyme02_can_f407\stm32f4xx_hal_tim.o"
+"jyme02_can_f407\stm32f4xx_hal_tim_ex.o"
+"jyme02_can_f407\system_stm32f4xx.o"
+--strict --scatter "jyme02_can_f407\jyme02_can_f407.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "jyme02_can_f407.map" -o jyme02_can_f407\jyme02_can_f407.axf
